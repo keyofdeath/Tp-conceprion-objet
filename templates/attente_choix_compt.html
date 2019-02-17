@@ -1,0 +1,17 @@
+{% extends "header.html" %} {% block body %}
+    <div class="login-wrapper">
+        <form class="login" id="virement" method="POST">
+            <h2 class="welcome">Card {{ session['card_number'] }} in the machine</h2>
+            <label class="title">
+                Select you operation
+            </label>
+            <div class="login-group">
+                {% for acount_name in acount_names %}
+                    <button type="submit" name="acount_number"
+                            value="{{ acount_name }}" class="btn btn-primary">Acount: {{ acount_name }}
+                    </button>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+{% endblock %}

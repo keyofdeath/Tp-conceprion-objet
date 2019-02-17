@@ -1,0 +1,40 @@
+[
+  {
+    "card-number": "1",
+    "card-password": "123",
+    "bank-accounts": [
+      {
+        "name": "a",
+        "sold": 100
+      },
+      {
+        "name": "b",
+        "sold": 1000
+      }
+    ]
+  },
+  {
+    "card-number": "2",
+    "card-password": "123",
+    "bank-accounts": [
+      {
+        "name": "c",
+        "sold": 2
+      }
+    ]
+  },
+  {
+    "card-number": "3",
+    "card-password": "123",
+    "bank-accounts": [
+      {
+        "name": "d",
+        "sold": 1000000
+      },
+      {
+        "name": "e",
+        "sold": 20000
+      }
+    ]
+  }
+]

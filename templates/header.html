@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %} {% assets "css_all" %}
+    <link rel=stylesheet type="text/css" href="{{ ASSET_URL }}"> {% endassets %}
+<style>
+
+    header .branding {
+        display: flex;
+        align-items: center;
+    }
+</style>
+<html lang="en">
+
+<head>
+    <title>
+        DAB
+    </title>
+</head>
+
+<header class="header-6">
+    <div class="branding">
+        <span class="title">DAB</span>
+    </div>
+    <div class="header-nav">
+        {% if session['logged_in']==True %}
+            <a href="/cancel" class="nav-link nav-text">Cancel Operation</a>
+        {% endif %}
+    </div>
+</header>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>
